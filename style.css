@@ -56,9 +56,7 @@ body {
 
 /* Header and Navbar Styles Start Here */
 header {
-    /* border-bottom: 5px solid #665e5e; */
     position: fixed;
-    /* position: relative; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,10 +64,6 @@ header {
     width: 100%;
     height: auto;
     z-index: 5;
-    /* background-color: rgba(255,255,255,0.4); */
-    padding-bottom: 4rem;
-
-    /* z-index: 99; */
 }
 nav {
     position: relative;
@@ -83,93 +77,79 @@ nav {
     position: relative;
     display: flex;
     width: 100%;
+    padding: 0 5rem;
     justify-content: space-between;
     background-color: rgba(255,255,255,0.6);
 }
-.nav-top-info {
+.nav-top-item {
     position: relative;
     display: flex;
     align-items: center;
-    margin: 0 2rem;
-    padding: 1rem 0;
+    padding: .5rem 0;
     text-transform: uppercase;
+    width: 150px;
 }
-.nav-top-info i {
+.nav-top-item i {
     margin-right: .5rem;
     font-size: 2rem;
 }
+.nav-top-right {
+    justify-content: flex-end;
+}
+.nav-logo {
+    justify-content: center;
+}
+.logo {
+    width: 100px;
+}
+
+
 nav ul {
     position: relative;
     display: flex;
 }
 nav ul li {
     list-style: none;
-    margin: 0 2rem;
+    margin: 0 1rem;
     text-transform: uppercase;
-
     position: relative;
     display: block;
-    /* float: left; */
-    padding: .5rem;
     transition-duration: 0.5s;
+    width: 125px;
 }
 nav ul li a {
     text-decoration: none;
     color: white;
-
-    /* display: block; */
 }
-.logo {
-    width: 120px;
-}
-
-
-
-
-li:hover,
-li:focus-within {
-	/* background: red; */
-	cursor: pointer;
-}
-
-
-
 .navigation {
     position: relative;
     display: flex;
-    /* display: block; */
     justify-content: center;
     align-items: center;
     background-color: #879c3a;
     width: 100%;
     height: 2rem;
+    text-align: center;
+    z-index: 5;
 }
-
-nav ul li ul {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    transition: all 0.5s ease;
-    margin-top: .45rem;
-    left: 0;
-    display: none;
-}
-nav ul li:hover > ul,
-nav ul li:focus-within > ul,
-nav ul li ul:hover,
-nav ul li ul:focus {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-  background-color: #879c3a;
-  border: none;
-  outline: none;
-  color: white;
-  cursor: pointer;
-}
-nav ul li ul li {
-    clear: both;
+.nav-lower {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
+    margin: 0 0 1rem 6rem;
+    padding-top: 1.5rem;
+    background-color: rgba(255,255,255,0.6);
+    z-index: 1;
+    height: 50px;
+}
+.nav-lower a {
+    margin-left: 2rem;
+    text-decoration: none;
+    color: black;
+    background-color: gray;
+    padding: .25rem .5rem;
 }
 /* Header and Navbar Styles End Here */
 
@@ -180,12 +160,12 @@ nav ul li ul li {
 
 /* Hero Styles Start Here */
 #hero {
-    /* background-color: gray; */
     background-image: url(img/hero-bg.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
+    border-bottom: 5px solid #ffffff;
 }
 #hero-text {
     position: relative;
@@ -194,7 +174,7 @@ nav ul li ul li {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: -12.5rem;
+    margin-top: -38rem;
 }
 #hero-text h3 {
     margin-bottom: 1.5rem;
@@ -211,11 +191,12 @@ nav ul li ul li {
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background: linear-gradient(to bottom, #879C3A, #ffffff);
     /* min-height: 100vh; */
+    padding: 0 3rem;
 }
-#grid-main-salt-box {
-    grid-area: salt-box;
+#grid-main-floated-house {
+    grid-area: floated-house;
     background-image: url(img/Rectangle\ 16.png);
     background-position: center center;
     background-size: cover;
@@ -270,7 +251,7 @@ nav ul li ul li {
     grid-auto-columns: repeat(8, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
-     "salt-box salt-box salt-box your-stay your-stay your-stay your-stay your-stay"
+     "your-stay your-stay your-stay your-stay your-stay floated-house floated-house floated-house"
      "beaches beaches trails trails legacy legacy gallery gallery"
      "vid vid vid vid vid vid vid vid";
     grid-gap: 1rem;
@@ -410,6 +391,138 @@ nav ul li ul li {
 }
 
 /* Activities Styles End Here */
+
+
+
+
+
+/* Accommodation Styles Start Here */
+#accommodation {
+    padding-top: 12rem;
+}
+.accommodation-top,
+.accommodation-container,
+.cabin-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 3rem;
+}
+.accommodation-top h2 {
+    padding-bottom: 1rem;
+    align-self: flex-start;
+}
+.accommodation-top img {
+    width: 100%;
+}
+.accommodation-top p {
+    padding-top: 2rem;
+    align-self: flex-start;
+}
+.accommodation-secondary-bg {
+    background-color: lightgray;
+}
+.accommodation-info {
+    position: relative;
+    display: flex;
+    /* margin-left: 1rem; */
+}
+.accommodation-info h3 {
+    margin-bottom: 1rem;
+}
+.accommodation-info p {
+    margin-top: 1rem;
+}
+.accommodation-details.one {
+    margin-right: 1rem;
+}
+.accommodation-details.two {
+    margin-left: 1rem;
+}
+.accommodation-image img {
+    width: 62vw;
+}
+.accommodation-images {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.accommodation-image-item {
+    margin: 1rem .7rem 0 .7rem;
+    /* width: calc(25% - 3rem); */
+}
+.cabin-container {
+    width: 100%;
+}
+.cabin-image,
+.cabin-info {
+    width: 50%;
+}
+.cabin-image img {
+    width: 100%;
+}
+.cabin-container h2 {
+    align-self: flex-start;
+    margin-bottom: 1rem;
+}
+.cabin-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1rem;
+}
+.cabin-details {
+    position: relative;
+    display: flex;
+}
+.cabin-image p {
+    color: white;
+}
+.cabin-banner {
+    position: absolute;
+    top: 2rem;
+    background-color: green;
+    border-radius: 0 8px 8px 0;
+    padding: .25rem .75rem;
+}
+.cabin-text-top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.cabin-view {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: .3rem;
+    width: 50%;
+}
+.cabin-view img {
+    width: 100%;
+    margin-right: 1rem;
+}
+.cabin-images {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+.cabin-image-item  {
+    margin-top: 1rem;
+    width: calc(100% - 1rem);
+}
+.cabin-image-item:nth-child(2) {
+    margin: 1rem 1rem 0 1rem;
+}
+.cabin-image-item img {
+    /* margin: 1rem 1rem 0 1rem; */
+    width: 100%;
+}
+/* Accommodation Styles End Here */
 
 
 
@@ -695,8 +808,9 @@ nav ul li ul li {
     position: relative;
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: flex-end;
     padding: 1rem 0;
+    margin-right: 7rem;
 }
 /* Footer Styles End Here */
 
