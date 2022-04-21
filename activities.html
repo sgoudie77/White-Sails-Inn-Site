@@ -7,7 +7,7 @@
     <meta name="description" content="DESCRIPTION CONTENT GOES HERE"/>
     <title>White Sails Inn</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -40,23 +40,23 @@
             </ul>
             <div class="nav-lower">
                 <h2>Things To Do</h2>
-                <a href="#">Beaches</a>
-                <a href="#">Trails</a>
-                <a href="#">Day Trips</a>
+                <a href="#beaches">Beaches</a>
+                <a href="#trails-top">Trails</a>
+                <a href="#day-trips">Day Trips</a>
             </div>
         </nav>
     </header>
     <!-- Header and Navbar End Here -->
     
     <!-- Activities Beaches Section Starts Here -->
-    <section class="container activities">
-        <div class="activities-top">
+    <section class="container activities" id="activities-top">
+        <div class="activities-top-maps">
             <h2>Beaches</h2>
             <img src="img/beach-map-opt.jpg" alt="">
             <img src="img/beach-picture-map-opt.jpg" alt="">
         </div>
         <!-- activity item starts here -->
-        <div class="activity-wrapper">
+        <div class="activity-wrapper" id="beaches">
             <h3>Eastport Beach</h3>
             <div class="activity-wrapper-inner">
                 <div class="activity-info">
@@ -267,12 +267,12 @@
                 </div>
                 <div id="day-trip-list-right">
                     <ul>
-                        <li class="trip-list-title">Festivals/Performances at the Beaches Arts and Heritage Centre (7 minute walk)</li>
+                        <li>Festivals/Performances at the Beaches Arts and Heritage Centre (7 minute walk)</li>
                         <li>Winterset Literary Festival</li>
                         <li>Accordion Festival</li>
                         <li>Music and drama performances</li>
                         <li>Heritage Centre</li>
-                        <li class="trip-list-title">Other Festivals</li>
+                        <!-- <li class="trip-list-title">Other Festivals</li> -->
                         <li>Damnable Trails Festival</li>
                         <li>Agricultural Festival</li>
                         <li>Salvage Fishermans Museum (10 minute drive)</li>
@@ -403,7 +403,11 @@
     </section>
     <!-- Footer Section Ends Here -->
 
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Back To Top Button Start -->
+    <a href="#" class="top" title="back to top"><i class="fa fa-arrow-up"></i></a>
+    <!-- Back To Top Button End -->
+
+    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
     <script src="script.js"></script>
 </body>
 </html>

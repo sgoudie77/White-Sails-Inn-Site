@@ -39,9 +39,9 @@
             </ul>
             <div class="nav-lower">
                 <h2>Accommodations</h2>
-                <a href="#">The Inn (Beach House)</a>
-                <a href="#">The Salt Box</a>
-                <a href="#">Cabins</a>
+                <a href="#inn">The Inn (Beach House)</a>
+                <a href="#salt-box">The Salt Box</a>
+                <a href="#cabins">Cabins</a>
             </div>
         </nav>
     </header>
@@ -56,7 +56,7 @@
     <!-- Accommodation Top Ends Here -->
 
     <!-- Accommondation One Starts Here -->
-    <div class="accommodation-container accommodation-secondary-bg">
+    <div class="accommodation-container accommodation-secondary-bg" id="inn">
         <div class="accommodation-info">
             <div class="accommodation-details one">
                 <h3>The Inn<br>(The Beach House)</h3>
@@ -67,7 +67,7 @@
                     Originally built in 1947 by Gerald S. Doyle as his summer home, The Inn has since been a favourite vacation spot. Guests who came as children are now bringing grandchildren. Rich with history, character and unique architecture, The Inn has five-bedrooms (5 double beds and 3 twins), 2 ½ bathrooms, a large kitchen and dining room, and a spacious living room that over-looks Eastport Beach. The Inn has its own garden with mature trees, picnic tables and a large deck with Adirondack chairs. Quaint and peaceful with large windows, artwork and space, The Inn offers all amenities for a memorable stay.
                 </p>
             </div>
-            <div class="accommodation-image">
+            <div class="accommodation-image cpl">
                 <img src="img/beachhouse-main-opt.jpg" alt="">
             </div>
         </div>
@@ -89,9 +89,9 @@
     <!-- Accommondation One Ends Here -->
     
     <!-- Accommondation Two Starts Here -->
-    <div class="accommodation-container">
+    <div class="accommodation-container" id="salt-box">
         <div class="accommodation-info">
-            <div class="accommodation-image">
+            <div class="accommodation-image cpr">
                 <img src="img/salt-box-main-opt.jpg" alt="">
             </div>
             <div class="accommodation-details two">
@@ -121,16 +121,16 @@
     <!-- Accommondation Two Ends Here -->
 
     <!-- Cabins Section Starts Here -->
-    <div class="cabin-main">
+    <div class="cabin-main" id="cabins">
         <!-- cabin one start -->
         <div class="cabin-container accommodation-secondary-bg">
             <h2>Cabins</h2>
             <div class="cabin-details">
-                <div class="cabin-image">
+                <div class="cabin-image cpr">
                     <p class="cabin-banner">Cabin 1</p>
                     <img src="img/cabin-01-02-opt.jpg" alt="">
                 </div>
-                <div class="cabin-info">
+                <div class="cabin-info cpl">
                     <div class="cabin-text">
                         <div class="cabin-text-top">
                             <h5>Maximum Occupancy: 2</h5>
@@ -139,8 +139,12 @@
                         <p>A small, but quaint cottage offering all amenities for a comfortable stay. One-bedroom (double bed). Sleeps 2.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, saepe.</p>
                     </div>
                     <div class="cabin-view">
-                        <img src="img/cabin-01-01-opt.jpg" alt="">
-                        <img src="img/cabin-01-03-opt.jpg" alt="">
+                        <div class="cabin-view-item">
+                            <img src="img/cabin-01-01-opt.jpg" alt="">
+                        </div>
+                        <div class="cabin-view-item">
+                            <img src="img/cabin-01-03-opt.jpg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -149,11 +153,7 @@
         <!-- cabin two and three start -->
         <div class="cabin-container">
             <div class="cabin-details">
-                <div class="cabin-image">
-                    <p class="cabin-banner">Cabin 2 & 3</p>
-                    <img src="img/cabin-02-03-main-opt.jpg" alt="">
-                </div>
-                <div class="cabin-info">
+                <div class="cabin-info cpr">
                     <div class="cabin-text">
                         <div class="cabin-text-top">
                             <h5>Maximum Occupancy: 5 each</h5>
@@ -162,9 +162,17 @@
                         <p>Cottages 2 and 3 are joined as a duplex. Each cottage offers all amenities for a comfortable stay. Each has two bedrooms (a double bed in one; and a double and twin in the other). Bathrooms have showers, but no tubs. Each cottage sleeps 5.</p>
                     </div>
                     <div class="cabin-view">
-                        <img src="img/cabin-02-03-02-opt.jpg" alt="">
-                        <img src="img/cabin-02-03-03-opt.jpg" alt="">
+                        <div class="cabin-view-item">
+                            <img src="img/cabin-02-03-02-opt.jpg" alt="">
+                        </div>
+                        <div class="cabin-view-item">
+                            <img src="img/cabin-02-03-03-opt.jpg" alt="">
+                        </div>
                     </div>
+                </div>
+                <div class="cabin-image cpl">
+                    <p class="cabin-banner">Cabin 2 & 3</p>
+                    <img src="img/cabin-02-03-main-opt.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -172,11 +180,11 @@
         <!-- cabin four start -->
         <div class="cabin-container accommodation-secondary-bg">
             <div class="cabin-details">
-                <div class="cabin-image">
+                <div class="cabin-image cpr">
                     <p class="cabin-banner">Cabin 4</p>
                     <img src="img/cabin-04-main-opt.jpg" alt="">
                 </div>
-                <div class="cabin-info">
+                <div class="cabin-info cpl">
                     <div class="cabin-text">
                         <div class="cabin-text-top">
                             <h5>Maximum Occupancy: 4</h5>
@@ -185,7 +193,9 @@
                         <p>Located at the rear of our property and offering excellent privacy, this two-bedroom cottage has all the amenities for a comfortable stay. Double beds in each room. Sleeps 4.</p>
                     </div>
                     <div class="cabin-view">
-                        <img src="img/cabin-04-01-opt.jpg" alt="">
+                        <div class="cabin-view-item">
+                            <img src="img/cabin-04-01-opt.jpg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -193,11 +203,7 @@
         <!-- cabin four end -->
         <!-- cabin five start -->
         <div class="cabin-container">
-            <div class="cabin-details">
-                <div class="cabin-image">
-                    <p class="cabin-banner">Cabin 5</p>
-                    <img src="img/Cabin-05-main-opt.jpg" alt="">
-                </div>
+            <div class="cabin-details cpr">
                 <div class="cabin-info">
                     <div class="cabin-text">
                         <div class="cabin-text-top">
@@ -206,9 +212,14 @@
                         </div>
                         <p>Located at the rear of our property and offering excellent privacy, this two-bedroom cottage has all the amenities for a comfortable stay. Double beds in each room. Sleeps 4</p>
                     </div>
-                    <div class="cabin-view">
-                        
+                    <div class="cabin-view"> 
+                        <div class="cabin-view-item"></div>
+                        <div class="cabin-view-item"></div>       
                     </div>
+                </div>
+                <div class="cabin-image cpl">
+                    <p class="cabin-banner">Cabin 5</p>
+                    <img src="img/Cabin-05-main-opt.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -216,11 +227,11 @@
         <!-- cabin six start -->
         <div class="cabin-container accommodation-secondary-bg">
             <div class="cabin-details">
-                <div class="cabin-image">
+                <div class="cabin-image cpr">
                     <p class="cabin-banner">Cabin 6</p>
                     <img src="img/cabin-06-main-opt.jpg" alt="">
                 </div>
-                <div class="cabin-info">
+                <div class="cabin-info cpl">
                     <div class="cabin-text">
                         <div class="cabin-text-top">
                             <h5>Maximum Occupancy: 5</h5>
@@ -229,8 +240,12 @@
                         <p>Located near our playground, this cottage is the ideal location for families that have younger children. The cottage offers all amenities for a comfortable stay. Two bedrooms (a double bed in one; and a double and twin in the other). Sleeps 5.</p>
                     </div>
                     <div class="cabin-view">
-                        <img src="img/cabin-06-01-opt.jpg" alt="">
-                        <img src="img/cabin-06-02-opt.jpg" alt="">
+                        <div class="cabin-view-item">
+                            <img src="img/cabin-06-01-opt.jpg" alt="">
+                        </div>
+                        <div class="cabin-view-item">
+                            <img src="img/cabin-06-02-opt.jpg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -239,11 +254,7 @@
         <!-- cabin seven start -->
         <div class="cabin-container">
             <div class="cabin-details">
-                <div class="cabin-image">
-                    <p class="cabin-banner">Cabin 7</p>
-                    <img src="img/cabin-07-main-opt.jpg" alt="">
-                </div>
-                <div class="cabin-info">
+                <div class="cabin-info cpr">
                     <div class="cabin-text">
                         <div class="cabin-text-top">
                             <h5>Maximum Occupancy: 4-5</h5>
@@ -252,9 +263,17 @@
                         <p>Great privacy, large deck and everyone’s favourite cottage, this property offers all the amenities for a comfortable stay. Two bedrooms (a double bed in each). Sleeps 4.</p>
                     </div>
                     <div class="cabin-view">
-                        <img src="img/cabin-07-01-opt.jpg" alt="">
-                        <img src="img/cabin-07-02-opt.jpg" alt="">
+                        <div class="cabin-view-item">
+                            <img src="img/cabin-07-01-opt.jpg" alt="">
+                        </div>
+                        <div class="cabin-view-item">
+                            <img src="img/cabin-07-02-opt.jpg" alt="">
+                        </div>
                     </div>
+                </div>
+                <div class="cabin-image cpl">
+                    <p class="cabin-banner">Cabin 7</p>
+                    <img src="img/cabin-07-main-opt.jpg" alt="">
                 </div>
             </div>
         </div>
