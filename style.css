@@ -523,7 +523,6 @@ nav ul li a.active {
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* border-bottom: 2px solid lightgray; */
 }
 .legacy-box:last-child(4) {
     border-bottom: none;
@@ -552,37 +551,44 @@ nav ul li a.active {
     width: 50%;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
 }
 .legacy-info p,
 .legacy-images p {
-    /* font-size: var(--fs-p);
-    font-weight: 500;
-    letter-spacing: 1px;
-    line-height: 16px; */
-
     font-size: var(--fs-p);
     font-weight: 500;
     letter-spacing: 1px;
     line-height: 24px;
     padding-right: .5rem;
 }
+.legacy-info img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: .4rem;
+}
 .legacy-images {
+    position: relative;
+    display: flex;
     margin-left: .5rem;
+}
+.legacy-images#li-2 {
+    justify-content: space-between;
 }
 .legacy-images-box {
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 50%;
-}
-.legacy-images-box img {
-    position: relative;
     width: 100%;
-    padding-right: 1rem;
 }
-.legacy-link {
-    margin-top: 1rem;
+.legacy-image-item {
+    width: calc(50% - .5rem);
+    border-radius: 8px;
+}
+.legacy-image-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+#legacy-link {
+    padding-top: .5rem;
 }
 .legacy-info img {
     position: relative;
@@ -618,6 +624,7 @@ nav ul li a.active {
 .legacy-content-col.images img {
     width: 100%;
     margin-bottom: 1rem;
+    border-radius: 8px;
 }
 #legacy-caption {
     margin-top: -1rem;
