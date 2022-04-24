@@ -1171,7 +1171,7 @@ nav ul li a.active {
     width: 100%;
 }
 .gallery a {
-    width: 303px;
+    width: 304px;
     margin: .5rem;
     height: 240px;
     border-radius: 8px;
@@ -1179,7 +1179,7 @@ nav ul li a.active {
     transition: 0.2s ease;
 }
 .gallery a img {
-    width: 303px;
+    width: 304px;
     border-radius: 8px;
     height: 240px;
     width: 301px;
@@ -1190,7 +1190,7 @@ nav ul li a.active {
     filter: grayscale(1);
     transition: 0.2s ease;
     height: 240px;
-    width: 303px;
+    width: 304px;
 }
 .lg-image {
     border: 1px solid var(--clr-white);
