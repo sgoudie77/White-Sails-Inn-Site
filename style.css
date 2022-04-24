@@ -1192,6 +1192,15 @@ nav ul li a.active {
     height: 240px;
     width: 303px;
 }
+.lg-image {
+    border: 1px solid var(--clr-white);
+    border-radius: 8px;
+}
+.lg-sub-html {
+    padding-bottom: 6rem;
+    /* padding-top: 1rem; */
+}
+
 /* .lg-object.lg-image img {
     height: 480px;
 }  */
