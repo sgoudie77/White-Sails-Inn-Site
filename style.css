@@ -33,13 +33,13 @@ body {
     --fs-h5: 2.4rem;
     --fs-h6: 2rem;
     --fs-p: 1.7rem;
-    --f2-p2: 1.6rem;
+    /* --f2-p2: 1.6rem; */
     /* --fs-nav: 1.7rem;
     --fs-sub-nav: 1.6rem;
     --fs-lk: 16rem; */
     /* line height and spacing */
-    --ln-ht: 1rem;
-    --ln-sp: 1px;
+    /* --ln-ht: 1rem;
+    --ln-sp: 1px; */
     /* colors */
     --clr-white: #ffffff;
     --clr-black: #000000;
@@ -48,6 +48,7 @@ body {
     --clr-grass-dark: #5b6630;
     --clr-secondary-bg: #F1F3E7;
     --clr-blue: #253444;
+    --clr-lk: #147ac4;
     --clr-lk-hover: #8eb6e0;
 }
 
@@ -65,7 +66,7 @@ body {
     position: fixed;
     width: 3rem;
     height: 3rem;
-    background: lightgray;
+    background-color: lightgray;
     bottom: 1.25rem;
     right: 1.25rem;
     text-decoration: none;
@@ -226,7 +227,7 @@ nav ul li a.active {
     min-height: 100vh; */
     width: 100%;
     border-bottom: 2px solid var(--clr-white);
-    padding-top: 12.5rem;
+    /* padding-top: 12.5rem; */
 }
 #hero img {
     width: 100%;
@@ -408,10 +409,10 @@ nav ul li a.active {
     margin: 0 .5rem;
 }
 #top-left {
-    width: 62.5%;
+    width: 50%;
 }
 #top-right {
-    width: 37.5%;
+    width: 50%;
 }
 .category-item-half img {
     width: 100%;
@@ -639,7 +640,7 @@ nav ul li a.active {
 }
 #legacy-caption {
     margin-top: -1rem;
-    font-size: var(--fs-p2);
+    font-size: 14px;
     color: var(--clr-blue);
 }
 /* Our Legacy Styles End Here */
@@ -767,6 +768,10 @@ nav ul li a.active {
     width: 100%;
     border-radius: 8px;
 }
+.info-link {
+    color: var(--clr-lk);
+    
+}
 
 .activity-salvage {
     position: relative;
@@ -827,6 +832,7 @@ nav ul li a.active {
     width: 100%;
     justify-content: center;
     align-items: center;
+    /* padding-bottom: 2rem; */
 }
 .day-trip-wrapper h5 {
     font-size: var(--fs-h5);
@@ -847,6 +853,7 @@ nav ul li a.active {
     justify-content: center;
     align-items: center;
     padding: 0 5rem;
+    
 }
 #day-trip-list-left,
 #day-trip-list-right {
@@ -979,7 +986,7 @@ nav ul li a.active {
 }
 .accommodation-top p {
     padding: 1rem 5rem;
-    font-size: var(--fs-p2);
+    font-size: 14px;
     color: var(--clr-blue);
     font-weight: 500;
     letter-spacing: 1px;
