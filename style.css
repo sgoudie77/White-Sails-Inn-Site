@@ -88,6 +88,9 @@ body {
 :target { 
       scroll-margin-top: 16rem; 
 }
+.info-link {
+    color: var(--clr-lk);
+}
 /* Global Styles End Here */
 
 /* Header and Navbar Styles Start Here */
@@ -601,6 +604,7 @@ nav ul li a.active {
     font-size: var(--fs-p);
     font-weight: 500;
     letter-spacing: 1px;
+    margin-top: .5rem;
 }
 .legacy-info img {
     position: relative;
@@ -768,9 +772,13 @@ nav ul li a.active {
     width: 100%;
     border-radius: 8px;
 }
-.info-link {
-    color: var(--clr-lk);
-    
+#damnable-link {
+    margin-top: .5rem;
+}
+
+.activity-text a {
+    margin-top: 5rem;
+
 }
 
 .activity-salvage {
@@ -789,6 +797,9 @@ nav ul li a.active {
     letter-spacing: 1px;
     line-height: 24px;
     color: var(--clr-blue);
+}
+.salvage-text p:nth-child(1) {
+    margin-bottom: 1rem;
 }
 .salvage-image {
     position: relative;
@@ -853,7 +864,7 @@ nav ul li a.active {
     justify-content: center;
     align-items: center;
     padding: 0 5rem;
-    
+    margin-bottom: 2rem;
 }
 #day-trip-list-left,
 #day-trip-list-right {
@@ -890,7 +901,8 @@ nav ul li a.active {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    width: calc(100% - 1rem);
+    /* width: calc(100% - 1rem); */
+    width: 100%;
     justify-content: center;
     padding: 0 4rem;
 }
@@ -909,6 +921,7 @@ nav ul li a.active {
     position: relative;
     padding: 0 5rem;
     margin-top: 1rem;
+    width: 100%;
 }
 #day-trip-map img {
     width: 100%;
@@ -1087,12 +1100,10 @@ nav ul li a.active {
     width: 100%;
     border-radius: 8px;
 }
-.cabin-container h5 {
-    
+.cabin-main h5 {
     margin-bottom: 1rem;
-
     align-self: flex-start;
-    /* padding-left: 5rem; */
+    padding-left: 5rem;
     font-size: var(--fs-h5);
     color: var(--clr-blue);
     font-weight: 600;
@@ -1476,6 +1487,9 @@ nav ul li a.active {
     position: relative;
     display: flex;
 }
+#contact-icons a {
+    text-decoration: none;
+}
 #contact-icons i {
     position: relative;
     display: flex;
@@ -1488,6 +1502,11 @@ nav ul li a.active {
     height: 35px;
     font-size: 22px;
     margin: 2rem 1rem;
+    transition: 0.2s ease;
+}
+#contact-icons i:hover {
+    background-color: var(--clr-lk-hover);
+    transition: 0.2s ease;
 }
 /* #contact-map {
     margin-bottom: 2rem;
@@ -1579,7 +1598,8 @@ nav ul li a.active {
     display: flex;    
 }
 .fa-facebook-f {
-    padding-top: .2rem;
+    padding-top: 1.1rem;
+    /* font-size: 50px; */
 }
 .footer-icons a {
     text-decoration: none;
