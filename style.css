@@ -207,6 +207,7 @@ nav {
 #hero {
     width: 100%;
     border-bottom: 2px solid var(--clr-white);
+    padding-top: 12rem;
 }
 #hero img {
     width: 100%;
@@ -223,7 +224,8 @@ nav {
 #home-title h1 {
     font-size: var(--fs-h1);
     text-transform: uppercase;
-    color: var(--clr-blue);
+    color: var(--clr-white);
+    letter-spacing: 1px;
     margin-bottom: 2rem;
 }
 #categories-wrapper {
@@ -428,7 +430,7 @@ nav {
 }
 .accommodation-image img {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     border-radius: 8px;
 }
 .accommodation-images {
@@ -455,7 +457,7 @@ nav {
 }
 .cabin-image img {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     border-radius: 8px;
 }
 .cabin-main h2 {
@@ -535,7 +537,7 @@ nav {
     flex-direction: column;
 }
 #activities-top {
-    padding-top: 16rem;
+    padding-top: 17rem;
 }
 .activities-top-maps {
     padding: 0 5rem;
@@ -577,6 +579,7 @@ nav {
     letter-spacing: 1px;
     line-height: 24px;
     color: var(--clr-blue);
+    margin-bottom: 1rem;
 }
 .activity-info {
     position: relative;
@@ -601,14 +604,14 @@ nav {
 .activity-image {
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     width: 100%;
     margin-bottom: .3rem;
 }
 .activity-image img {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     border-radius: 8px;
 }
 .apr {
@@ -635,6 +638,14 @@ nav {
 #damnable-link {
     margin-top: .5rem;
 }
+/* check below later */
+#old-school {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 .activity-text a {
     margin-top: 5rem;
 }
@@ -645,6 +656,10 @@ nav {
 }
 .salvage-text {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     max-width: 50vw;
     padding-right: 1rem;
@@ -927,10 +942,10 @@ nav {
 }
 #legacy-link {
     padding-top: .5rem;
-    font-size: var(--fs-p);
+    font-size: 15px;
     font-weight: 500;
     letter-spacing: 1px;
-    margin-top: .5rem;
+    margin: .5rem 0;
 }
 .legacy-info img {
     position: relative;
@@ -962,6 +977,7 @@ nav {
     font-weight: 500;
     letter-spacing: 1px;
     line-height: 24px;
+    margin-bottom: 1rem;
 }
 .legacy-content-col.images img {
     width: 100%;
@@ -1191,7 +1207,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--clr-black);
+    color: var(--clr-blue);
     background-color: var(--clr-white);
     border-radius: 50%;
     width: 35px;
@@ -1206,6 +1222,7 @@ nav {
 }
 .fa-tripadvisor {
     font-size: 20px;
+    font-weight: 500;
 }
 .footer-col i:hover {
     background-color: var(--clr-lk-hover);
