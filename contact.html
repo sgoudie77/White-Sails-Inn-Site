@@ -7,7 +7,6 @@
     <meta name="description" content="DESCRIPTION CONTENT GOES HERE"/>
     <title>White Sails Inn - Contact</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -31,12 +30,12 @@
                 </div>
             </div>
             <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="accommodations.html">Accommodations</a></li>
-                <li><a href="activities.html">Things To Do</a></li>
-                <li><a href="legacy.html">Our Legacy</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="index.html" onclick="toggleMenu();">Home</a></li>
+                <li><a href="accommodations.html" onclick="toggleMenu();">Accommodations</a></li>
+                <li><a href="activities.html" onclick="toggleMenu();">Things To Do</a></li>
+                <li><a href="legacy.html" onclick="toggleMenu();">Our Legacy</a></li>
+                <li><a href="gallery.html" onclick="toggleMenu();">Gallery</a></li>
+                <li><a href="contact.html" class="active" onclick="toggleMenu();">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -45,9 +44,6 @@
     <!-- Contact Hero Section Starts Here -->
     <section class="container" id="hero-contact">
         <div id="hero-contact-image">
-            <!-- <div class="hero-contact-text">
-                <h1>Sea For Yourself</h1>
-            </div> -->
             <img src="img/contact-hero.jpg" alt="Causeway to Eastport peninsula">
         </div>
     </section>
@@ -56,7 +52,7 @@
     <!-- Contact Info Section Starts Here -->
     <div class="contact-wrapper">
         <div class="contact-text">
-            <h5>White Sails Inn</h5>
+            <h1>White Sails Inn</h1>
             <p>The White Sails Inn is located on the Eastport Peninsula, 15 minutes drive off of the Trans Canada Highway.</p>
             <p>Our Beach House and Cottages are directly across from Eastport Beach with direct access to the High Tide Trail.</p>
             <p>Please call us to book your reservation and we’ll be happy to help you plan your best stay<br>in Newfoundland and Labrador’s Central Region.</p>
@@ -85,12 +81,6 @@
         <img src="img/footer-profile.png" alt="Eastport beach and landscape">
     </section>
     <!-- Mountain Main Section Ends Here -->
-
-    <!-- Contact Map Section Starts Here -->
-    <!-- <section class="container" id="contact-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42171.37796690805!2d-53.78285182837322!3d48.653641286409155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b7437154a66fe27%3A0xca8a1e77fc19fad0!2sEastport%2C%20NL%2C%20Canada!5e0!3m2!1sen!2sus!4v1649363214830!5m2!1sen!2sus" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section> -->
-    <!-- Contact Map Section Ends Here -->
 
     <!-- Footer Section Starts Here -->
     <section id="footer">
@@ -141,7 +131,7 @@
     <a href="#" class="top" title="back to top"><i class="fa fa-arrow-up"></i></a>
     <!-- Back To Top Button End -->
 
-    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+    <!-- Scripts Start Here -->
     <script src="script.js"></script>
 </body>
 </html>

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>White Sails Inn - Accommodations</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -30,15 +29,15 @@
                 </div>
             </div>
             <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="accommodations.html" class="active">Accommodations</a></li>
-                <li><a href="activities.html">Things To Do</a></li>
-                <li><a href="legacy.html">Our Legacy</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" onclick="toggleMenu();">Home</a></li>
+                <li><a href="accommodations.html" class="active" onclick="toggleMenu();">Accommodations</a></li>
+                <li><a href="activities.html" onclick="toggleMenu();">Things To Do</a></li>
+                <li><a href="legacy.html" onclick="toggleMenu();">Our Legacy</a></li>
+                <li><a href="gallery.html" onclick="toggleMenu();">Gallery</a></li>
+                <li><a href="contact.html" onclick="toggleMenu();">Contact</a></li>
             </ul>
             <div class="nav-lower">
-                <h5>Accommodations</h5>
+                <h1>Accommodations</h1>
                 <a href="#inn">The Inn (Beach House)</a>
                 <a href="#salt-box">The Salt Box</a>
                 <a href="#cabins">Cabins</a>
@@ -49,7 +48,7 @@
 
     <!-- Accommodation Top Starts Here -->
     <div class="accommodation-top" id="accommodation">
-        <h5>The Property</h5>
+        <h2>The Property</h2>
         <img src="img/accomodations-hero.jpg" alt="White Sails property aerial view">
         <p class="caption">The White Sails Inn and Cabins is currently undergoing renovations to several of the cottages. Therefore, updated “interior” photos will be added to the website at a later date.</p>
     </div>
@@ -59,7 +58,7 @@
     <div class="accommodation-container accommodation-secondary-bg" id="inn">
         <div class="accommodation-info">
             <div class="accommodation-details one">
-                <h5>The Inn (The Beach House)</h5>
+                <h3>The Inn (The Beach House)</h3>
                 <p class="acb">Occupancy: 6 (Max 12)</p>
                 <p class="acb">Nightly Rate: $300.00</p>
                 <p class="acb">($20 extra per person)</p>
@@ -95,7 +94,7 @@
                 <img src="img/salt-box-main-opt.jpg" alt="Floated Yellow Salt Box">
             </div>
             <div class="accommodation-details two">
-                <h5>The Little Floated Salt Box</h5>
+                <h3>The Little Floated Salt Box</h3>
                 <p class="acb">Occupancy: 2 (Max 2)</p>
                 <p class="acb">Nightly Rate: $150</p>
                 <p class="actp">
@@ -122,7 +121,7 @@
 
     <!-- Cabins Section Starts Here -->
     <div class="cabin-main" id="cabins">
-        <h5>Cabins</h5>
+        <h2>Cabins</h2>
         <!-- cabin one start -->
         <div class="cabin-container accommodation-secondary-bg">
             <div class="cabin-details">
@@ -336,7 +335,7 @@
     <a href="#" class="top" title="back to top"><i class="fa fa-arrow-up"></i></a>
     <!-- Back To Top Button End -->
 
-    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+    <!-- Scripts Start Below -->
     <script src="script.js"></script>
 </body>
 </html>

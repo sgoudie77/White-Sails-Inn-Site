@@ -7,7 +7,6 @@
     <meta name="description" content="DESCRIPTION CONTENT GOES HERE"/>
     <title>White Sails Inn - Things To Do</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -31,15 +30,15 @@
                 </div>
             </div>
             <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="accommodations.html">Accommodations</a></li>
-                <li><a href="activities.html" class="active">Things To Do</a></li>
-                <li><a href="legacy.html">Our Legacy</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" onclick="toggleMenu();">Home</a></li>
+                <li><a href="accommodations.html" onclick="toggleMenu();">Accommodations</a></li>
+                <li><a href="activities.html" class="active" onclick="toggleMenu();">Things To Do</a></li>
+                <li><a href="legacy.html" onclick="toggleMenu();">Our Legacy</a></li>
+                <li><a href="gallery.html" onclick="toggleMenu();">Gallery</a></li>
+                <li><a href="contact.html" onclick="toggleMenu();">Contact</a></li>
             </ul>
             <div class="nav-lower">
-                <h5>Things To Do</h5>
+                <h1>Things To Do</h1>
                 <a href="#beaches">Beaches</a>
                 <a href="#trails">Trails</a>
                 <a href="#day-trips">Day Trips</a>
@@ -51,7 +50,7 @@
     <!-- Activities Top Section Starts Here -->
     <section class="container activities" id="activities-top">
         <div class="activities-top-maps">
-            <h5>Beaches</h5>
+            <h2>Beaches</h2>
             <img src="img/beaches-hero.jpg" alt="Things to do">
             <img src="img/beach-locator-1280.jpg" alt="Eastport aerial beach image">
         </div>
@@ -62,7 +61,7 @@
     <section class="container activities">
         <!-- activity item starts here -->
         <div class="activity-wrapper" id="beaches">
-            <h5>Eastport Beach</h5>
+            <h3>Eastport Beach</h3>
             <div class="activity-wrapper-inner">
                 <div class="activity-info apr">
                     <div class="activity-text">
@@ -85,7 +84,7 @@
         <!-- activity item ends here -->
         <!-- activity item starts here -->
         <div class="activity-wrapper activity-secondary-bg">
-            <h5>Seal Cove Beach</h5>
+            <h3>Seal Cove Beach</h3>
             <div class="activity-wrapper-inner">
                 <div class="activity-image apr">
                     <img src="img/seal-cove-beach-main-opt.jpg" alt="Seal Cove Beach">
@@ -106,7 +105,7 @@
         <!-- activity item ends here -->
         <!-- activity item starts here -->
         <div class="activity-wrapper">
-            <h5>Northside Beach</h5>
+            <h3>Northside Beach</h3>
             <div class="activity-wrapper-inner">
                 <div class="activity-info apr">
                     <div class="activity-text">
@@ -129,7 +128,7 @@
         <!-- activity item ends here -->
         <!-- activity item starts here -->
         <div class="activity-wrapper activity-secondary-bg">
-            <h5>Sandy Cove Beach</h5>
+            <h3>Sandy Cove Beach</h3>
             <div class="activity-wrapper-inner">
                 <div class="activity-image apr">
                     <img src="img/sandy-cove-beach-main-opt.jpg" alt="Sandy Cove Beach">
@@ -152,7 +151,7 @@
         <!-- activity item ends here -->
         <!-- activity item starts here -->
         <div class="activity-wrapper">
-            <h5>Crooked Tree Park</h5>
+            <h3>Crooked Tree Park</h3>
             <div class="activity-wrapper-inner">
                 <div class="activity-info apr">
                     <div class="activity-text">
@@ -178,7 +177,7 @@
 
     <!-- Trails Top Starts Here -->
     <section id="trails">
-        <h5>Trails</h5>
+        <h2>Trails</h2>
         <img src="img/trail-map.jpg" alt="Eastport area trail map">
     </section>
     <!-- Trails Top Ends Here -->
@@ -187,7 +186,7 @@
     <section class="container activities">
         <!-- trail item starts here -->
         <div class="activity-wrapper activity-secondary-bg">
-            <h5>High Tide Trail</h5>
+            <h3>High Tide Trail</h3>
             <div class="activity-wrapper-inner">
                 <div class="activity-image apr">
                     <img src="img/high-tide-trail-main-opt.jpg" alt="High Tide Trail trail head">
@@ -210,7 +209,7 @@
         <!-- trail item ends here -->
         <!-- trail item starts here -->
         <div class="activity-wrapper">
-            <h5>Old School House Trail</h5>
+            <h3>Old School House Trail</h3>
             <div class="activity-wrapper-inner">
                 <div class="activity-info apr">
                     <div class="activity-text">
@@ -229,7 +228,7 @@
         <!-- trail item ends here -->
         <!-- trail item starts here -->
         <section class="activity-wrapper activity-secondary-bg">
-            <h5>The Damnable Trail System</h5>
+            <h3>The Damnable Trail System</h3>
             <div class="activity-wrapper-inner">
                 <div class="activity-image apr">
                     <img src="img/damnable-trail-main-opt.jpg" alt="The Damnable Trail through forest">
@@ -255,7 +254,7 @@
         <!-- trail item ends here -->
         <!-- salvage item starts here -->
         <div class="activity-wrapper">
-            <h5>Town of Salvage</h5>
+            <h3>Town of Salvage</h3>
             <div class="activity-salvage">
                 <div class="salvage-text">
                     <p>The Town of Salvage is one of the oldest communities in Bonavista Bay. With a rich fishing heritage dating back hundreds of years, most settlers to the Eastport peninsula first lived and worked in this community. To this day, Salvage is still a fishing community for a few, but the town comprises mostly retired residents and summer home-owners. Salvage is a 10-minute drive from the White Sails Inn. There is a Fisherman’s Museum in the town that covers the history quite well, and there are the various Damnable Trails to explore.</p>
@@ -288,8 +287,8 @@
     <section class="container" id="day-trips">
         <div class="day-trip-wrapper">
             <!-- day trips list starts here -->
-            <h5>Day Trips</h5>
-            <h6>Spend Your Afternoon</h6>
+            <h2>Day Trips</h2>
+            <h3>Spend Your Afternoon</h6>
             <div class="day-trip-list">
                 <div id="day-trip-list-left">
                     <ul>
@@ -312,7 +311,6 @@
                         <li>Accordion Festival</li>
                         <li>Music and drama performances</li>
                         <li>Heritage Centre</li>
-                        <!-- <li class="trip-list-title">Other Festivals</li> -->
                         <li>Damnable Trails Festival</li>
                         <li>Agricultural Festival</li>
                         <li>Salvage Fishermans Museum (10 minute drive)</li>
@@ -358,10 +356,10 @@
             <!-- day trip info starts here -->
             <div class="day-trip-info">
                 <div class="day-trip-text">
-                    <h5>Within 20 minutes</h5>
+                    <h3>Within 20 minutes</h3>
                     <a href="ttps://www.pc.gc.ca/en/pn-np/nl/terranova">Terra Nova National Park</a>
                     <a href="http://www.splashnputt.com/">Splash and Putt Water Park</a>
-                    <h5 class="dtp">Day Trip Ideas (within 45-60 minutes)</h5>
+                    <h3 class="dtp">Day Trip Ideas (within 45-60 minutes)</h3>
                     <a href="https://terranovagolfnl.com/">Terra Nova Golf Course</a>
                     <a href="https://www.gandergolfclub.net/home">Gander Golf Course</a>
                     <p>Several Salmon Fishing Areas</p>
@@ -369,7 +367,7 @@
                     <p>Town of Clarenville</p>
                 </div>
                 <div class="day-trip-text">
-                    <h5>Day Trip Ideas (within 1-2 hours)</h5>
+                    <h3>Day Trip Ideas (within 1-2 hours)</h3>
                     <p class="dtb">Bonavista Peninsula</p>
                     <p>(Bonavista, Elliston, Trinity, Port Rexton, Port Union)</p>
                     <p class="dtb dtp">Twillingate</p>
@@ -437,7 +435,7 @@
     <a href="#" class="top" title="back to top"><i class="fa fa-arrow-up"></i></a>
     <!-- Back To Top Button End -->
 
-    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+    <!-- Scripts Start Below -->
     <script src="script.js"></script>
 </body>
 </html>

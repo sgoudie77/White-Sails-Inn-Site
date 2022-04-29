@@ -7,7 +7,6 @@
     <meta name="description" content="DESCRIPTION CONTENT GOES HERE"/>
     <title>White Sails Inn</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" /> -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -38,12 +37,12 @@
                 </div>
             </div>
             <ul class="navigation">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="accommodations.html">Accommodations</a></li>
-                <li><a href="activities.html">Things To Do</a></li>
-                <li><a href="legacy.html">Our Legacy</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" class="active" onclick="toggleMenu();">Home</a></li>
+                <li><a href="accommodations.html" onclick="toggleMenu();">Accommodations</a></li>
+                <li><a href="activities.html" onclick="toggleMenu();">Things To Do</a></li>
+                <li><a href="legacy.html" onclick="toggleMenu();">Our Legacy</a></li>
+                <li><a href="gallery.html" onclick="toggleMenu();">Gallery</a></li>
+                <li><a href="contact.html" onclick="toggleMenu();">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -51,76 +50,15 @@
     
     <!-- Hero Section Starts Here -->
     <section class="container" id="hero">
-        <!-- <div id="hero-text">
-            <h5>Walk our land, swim our oceans, breathe our air, feel our legacy.</h5>
-            <h1>Restore Your Soul</h1>
-        </div> -->
-        <!-- <img src="img/hero-image-opt.jpg" alt=""> -->
         <img src="img/home-hero.jpg" alt="Town of Eastport Aerial View">
     </section>
     <!-- Hero Section Ends Here -->
     
-    <!-- Grid Main Section Starts Here -->
-    <!-- <section class="container" id="grid-main">
-        <div id="grid-main-area">
-            <div id="grid-main-floated-house" class="grid-main-item">
-                <div class="grid-main-item-title">
-                    <p class="grid-main-item-title-text">Little Floated House</p>
-                </div>
-                <div class="grid-main-item-banner">
-                    <p class="grid-main-item-banner-text">Our newest addition</p>
-                </div>
-            </div>
-            <div id="grid-main-your-stay" class="grid-main-item">
-                <div class="grid-main-item-title">
-                    <p class="grid-main-item-title-text">Your stay</p>
-                </div>
-                <div class="grid-main-item-banner">
-                    <p class="grid-main-item-banner-text">Accommodations</p>
-                </div>
-            </div>
-            <div id="grid-main-trails" class="grid-main-item">
-                <div class="grid-main-item-title">
-                    <p class="grid-main-item-title-text">Walk our land</p>
-                </div>
-                <div class="grid-main-item-banner">
-                    <p class="grid-main-item-banner-text">Our trails</p>
-                </div>
-            </div>
-            <div id="grid-main-beaches" class="grid-main-item">
-                <div class="grid-main-item-title">
-                    <p class="grid-main-item-title-text">Swim our ocean</p>
-                </div>
-                <div class="grid-main-item-banner">
-                    <p class="grid-main-item-banner-text">Our beaches</p>
-                </div>
-            </div>
-            <div id="grid-main-legacy" class="grid-main-item">
-                <div class="grid-main-item-title">
-                    <p class="grid-main-item-title-text">Breathe our air</p>
-                </div>
-                <div class="grid-main-item-banner">
-                    <p class="grid-main-item-banner-text">Our gallery</p>
-                </div>
-            </div>
-            <div id="grid-main-gallery" class="grid-main-item">
-                <div class="grid-main-item-title">
-                    <p class="grid-main-item-title-text">Feel our legacy</p>
-                </div>
-                <div class="grid-main-item-banner">
-                    <p class="grid-main-item-banner-text">Our history</p>
-                </div>
-            </div>
-            <div id="grid-main-vid" class="grid-main-item">
-                <div class="grid-main-item-vid">
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- Grid Main Section Ends Here -->
-    
     <!-- Main Categories Section Starts Here -->
     <section class="container" id="categories-main">
+        <div id="home-title">
+            <h1>White Sails Inn & Cabins</h1>
+        </div>
         <div id="categories-wrapper">
             <div class="category-items half">
                 <div class="category-item-half" id="top-left">
@@ -157,7 +95,7 @@
                 </div>
             </div>
             <div class="category-items" id="vid">
-                <img src="img/Rectangle 11.png" alt="Aerial views of Eastport peninsula">
+                <iframe loading="lazy" width="1245" height="720" src="https://www.youtube.com/embed/2LNsoLyBeTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </section>
@@ -218,7 +156,7 @@
     <a href="#" class="top" title="back to top"><i class="fa fa-arrow-up"></i></a>
     <!-- Back To Top Button End -->
 
-    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+    <!-- Scripts Start Below -->
     <script src="script.js"></script>
 </body>
 </html>
