@@ -307,9 +307,9 @@ nav {
     width: 100%;
     justify-content: center;
 }
-.category-items#vid img {
+/* .category-items#vid img {
     width: calc(100% - 1rem);
-}
+} */
 .category-item-half a,
 .category-item-quad a {
     width: 100%;
@@ -322,6 +322,14 @@ nav {
     transition: 0.2s ease;
     overflow: hidden;
 }
+/* .category-items#vid {
+    position: relative;
+    width: 100%;
+}
+.category-items#vid iframe {
+    height: 420px;
+    width: 100%;
+} */
 /* Homepage Styles Ends Here */
 
 
@@ -661,7 +669,7 @@ nav {
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 50vw;
+    /* max-width: 50vw; */
     padding-right: 1rem;
     font-size: var(--fs-p);
     font-weight: 500;
@@ -687,22 +695,36 @@ nav {
 .salvage-images {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     margin-top: 1rem;
 }
 .salvage-image-item {
-    width: calc(100% - .4rem);
-    margin: 0 .5rem;
+    /* width: calc(100% - .4rem); */
+    /* position: relative;
+    width: 25%;
+    margin: 0 .5rem; */
+    /* padding: 1rem .5rem; */
+
+    position: relative;
+    width: 25%;
+    padding: 1rem .5rem;
 }
 .salvage-image-item img {
     width: 100%;
     border-radius: 8px;
 }
-.salvage-image-item:nth-child(1) {
-    margin-left: 0;
+/* .salvage-image-item:nth-child(1) {
+    padding-left: 1rem .5rem 1rem 0;
 }
 .salvage-image-item:nth-child(4) {
-    margin-right: 0;
+    padding-right: 1rem 0 1rem .5rem;
+} */
+.salvage-image-item:nth-child(1) {
+    padding-left: 0;
+}
+.salvage-image-item:nth-child(4) {
+    padding-right: 0;
 }
 .day-trip-wrapper {
     position: relative;
@@ -729,7 +751,7 @@ nav {
     display: flex;
     width: 100%;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 0 5rem;
     margin-bottom: 2rem;
 }
@@ -738,7 +760,9 @@ nav {
     position: relative;
     display: flex;
     justify-content: center;
+    /* align-items: flex-start; */
     width: 100%;
+    /* height: 100%; */
 }
 #day-trip-list-right {
     flex-direction: column;
@@ -880,10 +904,14 @@ nav {
     width: 100%;
 }
 .legacy-box h3 {
+    /* position: relative;
+    display: flex;
+    align-items: flex-start; */
+    width: 100%;
     margin-bottom: 1rem;
     padding-top: 1.5rem;
     padding-bottom: 1rem;
-    align-self: flex-start;
+    text-align: left;
     padding-left: 5rem;
     font-size: var(--fs-h3);
     color: var(--clr-blue);
@@ -1165,19 +1193,24 @@ nav {
 #footer-wrapper {
     position: relative;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
     padding-top: 1.5rem;
 }
-/* .footer-col {
+.footer-col {
     position: relative;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    width: 30%;
+    flex-direction: column;
+    /* width: 30vw; */
     height: auto;
-} */
+}
+.footer-line {
+    display: none;
+    width: 250px;
+    text-align: center;
+}
 .footer-col h4 {
     font-size: var(--fs-h4);
     letter-spacing: 2px;
@@ -1251,26 +1284,87 @@ nav {
 
 /* Responsive Styles Start Here */
 @media screen and (max-width: 1199px) {
-    #hero {
-        padding-top: 12rem;
+    
+}
+
+
+
+
+@media screen and (max-width: 991px) {
+    .navbar ul li {
+        margin: 0 1.25rem;
+    }
+    .category-item-banner-top {
+        font-size: 16px;
+    }
+    .category-item-banner-bottom {
+        font-size: 14px;
+    }
+    .actp {
+        font-size: 16px;
+    }
+    .cabin-details {
+        align-items: flex-end;
+    }
+    .cabin-text {
+        margin-bottom: 1rem;
+    }
+    .cabin-text p {
+        font-size: 16px;
+    }
+    .cabin-image {
+        position: relative;
+        display: flex;
+        height: 100%;
+        margin-bottom: .3rem;
+    }
+    .activity-text,
+    .salvage-text {
+        font-size: 16px;
+    }
+    #day-trip-list-left ul li,
+    #day-trip-list-right ul li {
+        font-size: 14px;
+    }
+    .day-trip-text p,
+    .day-trip-text a {
+        font-size: 16px;
+    }
+    .legacy-top p,
+    .legacy-info p,
+    .legacy-floated-text p {
+        font-size: 16px;
+    }
+    .legacy-content-col p {
+        font-size: 16px;
+    }
+    .contact-text p,
+    #contact-info p {
+        font-size: 16px;
+    }
+    .footer-col ul li,
+    .footer-col ul a {
+        font-size: 16px;
     }
 }
-@media screen and (max-width: 991px) {
 
-}
+
+
+
 @media screen and (max-width: 768px) {
-/* responsive nav */
+/* responsive toggle menu */
 header .navbar ul {
     display: none;
 }
 .toggle {
     position: fixed;
     right: 5rem;
+    top: 2.5rem;
     width: 25px;
     height: 25px;
     cursor: pointer;
     background: url(img/menu.png);
-    filter: invert(1);
+    /* filter: invert(1); */
     background-size: 30px;
     background-position: center;
     background-repeat: no-repeat;
@@ -1278,8 +1372,9 @@ header .navbar ul {
 .toggle.active {
     position: fixed;
     right: 5rem;
+    top: 2.5rem;
     background: url(img/close.png);
-    filter: invert(1);
+    /* filter: invert(1); */
     background-size: 20px;
     background-position: center;
     background-repeat: no-repeat;
@@ -1312,8 +1407,319 @@ header .navbar ul.navigation.active li a:hover {
     color: var(--clr-black);
     transition: 0.2s ease;
 }
+
+
+
+
+/* responsive header and navbar */
+.nav-top {
+    background-color: var(--clr-grass);
+    flex-direction: row-reverse;
+    justify-content: flex-end;
 }
-@media screen and (max-width: 512px) {
+.nav-top-text {
+    font-size: 12px;
+    color: var(--clr-white);
+}
+.logo {
+    width: 100px;
+}
+.nav-top-item {
+    width: 175px;
+}
+.nav-top-item.nav-logo {
+    margin-right: 2rem;
+    width: 100px;
+}
+.nav-top-right {
+    display: none;
+}
+.nav-lower {
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+.nav-lower h1 {
+    font-size: var(--fs-h4);
+    margin-bottom: .5rem;
+}
+.nav-lower a {
+    font-size: 12px;
+}
+
+
+
+
+
+/* responsive home */
+#hero {
+    padding-top: 7rem;
+}
+#home-title h1 {
+    font-size: var(--fs-h3);
+}
+.category-items {
+    flex-wrap: wrap;
+}
+#top-left,
+#top-right {
+    width: 100%;
+}
+#top-left {
+    margin-bottom: 1rem;
+}
+.category-item-quad {
+    width: 49%;
+    margin: 0 0 1rem 0;
+}
+.category-item-banner-top {
+    font-size: var(--fs-h6);
+    /* top: 0; */
+}
+.category-item-banner-bottom {
+    /* font-size: 14px; */
+    display: none;
+}
+
+
+
+
+
+/* responsive accommodations */
+#accommodation {
+    padding-top: 14rem;
+}
+.accommodation-info.ti {
+    flex-direction: column-reverse;
+}
+.accommodation-info.sb {
+    flex-direction: column;
+}
+.accommodation-details,
+.accommodation-info {
+    width: 100%;
+    padding: 0;
+}
+.accommodation-details.one,
+.accommodation-details.two {
+    padding: 0;
+}
+.actp {
+    width: 100%;
+}
+.accommodation-image {
+    width: 100%;
+}
+.accommodation-image-item {
+    width: 50%;
+    padding-top: .75rem;
+    padding-bottom: 0;
+}
+.accommodation-image-item:nth-child(1),
+.accommodation-image-item:nth-child(3) {
+    padding-left: 0;
+    padding-right: .5rem;
+}
+.accommodation-image-item:nth-child(2),
+.accommodation-image-item:nth-child(4) {
+    padding-right: 0;
+    padding-left: .5rem;
+}
+.cabin-details {
+    align-items: flex-start;
+    width: 100%;
+}
+.cabin-details.fw {
+    flex-direction: column;
+}
+.cabin-details.rev {
+    flex-direction: column-reverse;
+}
+.cabin-info, .cabin-image {
+    width: 100%;
+}
+.cabin-view.solo {
+    justify-content: center;
+}
+.cpl {
+    padding-left: 0;
+}
+.cpr {
+    padding-right: 0;
+}
+
+
+
+
+/* responsive activities */
+.activity-wrapper-inner.fw {
+    flex-direction: column;
+}
+.activity-wrapper-inner.rev {
+    flex-direction: column-reverse;
+}
+.activity-salvage {
+    flex-direction: column-reverse;
+}
+.salvage-text {
+    width: 100%;
+}
+.salvage-image {
+    margin-left: 0;
+}
+.apr {
+    padding-right: 0;
+}
+.apl {
+    padding-left: 0;
+}
+.salvage-images {
+    width: 100%;
+    padding-left: 0;
+}
+.salvage-image-item {
+    width: 50%;
+    justify-content: space-between;
+    padding-top: .75rem;
+    padding-bottom: 0;
+}
+.salvage-image-item:nth-child(1),
+.salvage-image-item:nth-child(3) {
+    padding-left: 0;
+    padding-right: .5rem;
+}
+.salvage-image-item:nth-child(2),
+.salvage-image-item:nth-child(4) {
+    padding-right: 0;
+    padding-left: .5rem;
+}
+.day-trip-list {
+    
+    flex-direction: column;
+}
+#day-trip-list-left {
+    margin-bottom: 1rem;
+}
+.day-trip-info-wrapper {
+    flex-direction: column;
+}
+
+
+
+
+/* responsive legacy */
+#legacy-top h2 {
+    text-align: center;
+    padding-left: 0;
+}
+.legacy-top p {
+    font-size: 16px;
+}
+.legacy-box h3 {
+    text-align: center;
+    padding-left: 0;
+}
+
+.legacy-box-content.fw {
+    flex-direction: column;
+}
+.legacy-box-content.rev {
+    flex-direction: column-reverse;
+    width: 100%;
+}
+.legacy-info,
+.legacy-images {
+    width: 100%;
+}
+
+.legacy-floated-text i {
+    display: none;
+}
+.legacy-content-col-wrapper.fw {
+    flex-direction: column;
+}
+.legacy-content-col-wrapper.rev {
+    flex-direction: column-reverse;
+}
+.legacy-content-col.images,
+.legacy-content-col.text {
+    width: 100%;
+}
+.legacy-right-padd {
+    padding-right: 0;
+}
+.legacy-left-padd {
+    padding-left: 0;
+}
+#legacy-caption {
+    /* width: 100%; */
+    text-align: center;
+}
+
+
+
+
+/* responsive contact */
+#hero-contact-image {
+    width: 100%;
+    padding-top: 7rem;
+}
+.contact-details {
+    flex-direction: column-reverse;
+}
+.contact-text p,
+#contact-info p {
+    font-size: 16px;
+}
+#contact-image,
+#contact-info {
+    width: 100%;
+}
+#contact-image {
+    margin-top: 2rem;
+}
+
+
+
+
+/* responsive footer */
+#footer-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-col {
+    text-align: center;
+}
+.footer-line {
+    display: block;
+    /* width: 250px;
+    text-align: center; */
+}
+.footer-icons {
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    
+}
+.footer-col i {
+    margin: .5rem .5rem 0 .5rem;
+    /* margin-right: 0; */
+}
+.footer-col ul li,
+.footer-col ul a {
+    font-size: 14px;
+}
+.footer-copyright {
+    justify-content: center;
+    padding: 0;
+    margin-right: 0;
+}
+
 
 }
+@media screen and (max-width: 599px) {
+    .category-item-banner-top {
+        font-size: 14px;
+    }
+}
+/* 320 480 600 768 900 1024 1200 */
 /* Responsive Styles End Here */
