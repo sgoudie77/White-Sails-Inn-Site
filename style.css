@@ -171,6 +171,10 @@ nav {
     text-align: center;
     z-index: 5;
 }
+#call {
+     display: none;
+     border-radius: 8px;
+}
 .nav-lower {
     position: relative;
     display: flex;
@@ -206,12 +210,18 @@ nav {
 
 /* Homepage Styles Start Here */
 #hero {
+    position: relative;
+    background-image: url(img/home-hero-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
+    min-height: 100vh; 
     border-bottom: 2px solid var(--clr-white);
 }
-#hero img {
+/* #hero img {
     width: 100%;
-}
+} */
 #categories-main {
     position: relative;
     display: flex;
@@ -1337,6 +1347,11 @@ nav {
         color: var(--clr-black);
         transition: 0.2s ease;
     }
+    #call {
+        display: block;
+        border: 1px solid var(--clr-white);
+        margin-top: 1rem;
+    }
     
     /* responsive header and navbar */
     .nav-top {
@@ -1376,6 +1391,7 @@ nav {
     /* responsive home */
     #hero {
         padding-top: 7rem;
+        width: 100%;
     }
     #home-title h1 {
         font-size: var(--fs-h3);
@@ -1664,6 +1680,9 @@ nav {
 }
 
 @media screen and (max-width: 599px) {
+    #hero {
+        background-image: url(img/home-hero-mobile.jpg);
+    }
     .nav-lower a {
         font-size: 10px;
         margin: 0 .2rem;
