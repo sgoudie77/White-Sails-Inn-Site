@@ -219,9 +219,6 @@ nav {
     min-height: 100vh; 
     border-bottom: 2px solid var(--clr-white);
 }
-/* #hero img {
-    width: 100%;
-} */
 #categories-main {
     position: relative;
     display: flex;
@@ -1390,6 +1387,7 @@ nav {
 
     /* responsive home */
     #hero {
+        background-image: url(img/home-hero-mobile.jpg);
         padding-top: 7rem;
         width: 100%;
     }
@@ -1680,9 +1678,6 @@ nav {
 }
 
 @media screen and (max-width: 599px) {
-    #hero {
-        background-image: url(img/home-hero-mobile.jpg);
-    }
     .nav-lower a {
         font-size: 10px;
         margin: 0 .2rem;
